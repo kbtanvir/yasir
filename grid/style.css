@@ -1,0 +1,23 @@
+.item {
+  background: green;
+}
+
+.item:last-child {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: s;
+  background-color: greenyellow;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+      grid-template-areas: ". . ." ". . ." ". . ." "s s s";
+}
+/*# sourceMappingURL=style.css.map */

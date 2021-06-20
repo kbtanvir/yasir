@@ -1,0 +1,26 @@
+.container {
+  background-color: aqua;
+  margin: auto;
+  max-width: 1100px;
+  .row {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    .col {
+      align-items: center;
+      background-color: bisque;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      .details {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      button {
+        width: 70%;
+      }
+    }
+  }
+}

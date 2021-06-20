@@ -1,0 +1,45 @@
+.container {
+  background-color: aqua;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container .row .col {
+  background-color: #fcb85f;
+  min-height: 210px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.container .row .col img {
+  width: 100%;
+}
+
+.container .row .col .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .row .col button {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

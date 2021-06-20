@@ -1,0 +1,125 @@
+body {
+  font-family: Nunito;
+  font-size: 14px;
+  margin: 0%;
+}
+
+body h3 {
+  margin: 10px 0 20px 0;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-family: "Bodoni Moda", serif;
+}
+
+body p {
+  margin: 0 0 20px 0;
+}
+
+body li {
+  list-style: none;
+}
+
+body li a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #636363;
+}
+
+header .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+header .list a {
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+}
+
+header .list a:hover {
+  color: bisque;
+  text-decoration: underline;
+}
+
+header .logo img {
+  width: 110px;
+}
+
+.content {
+  padding: 80px 0px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.container .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+}
+
+.container .row .col button {
+  width: 150px;
+  background-color: bisque;
+  border: transparent;
+  padding: 10px;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  cursor: pointer;
+}
+
+.container .row .col button:hover {
+  background-color: #dcacac;
+  color: white;
+}
+
+footer {
+  background-color: bisque;
+  padding: 30px;
+}
+
+footer .col {
+  gap: 15px;
+}
+
+footer a {
+  color: #7e6f6f;
+}
+/*# sourceMappingURL=styles.css.map */

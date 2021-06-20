@@ -1,0 +1,39 @@
+@mixin flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: flex-start;
+}
+.flex-row {
+  @include flex-row;
+}
+.flex-col {
+  @include flex-col;
+}
+body {
+  font-family: Nunito;
+  font-size: 14px;
+  margin: 0%;
+  h3 {
+    margin: 10px 0 20px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: "Bodoni Moda", serif;
+  }
+  p {
+    margin: 0 0 20px 0;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+form {
+  margin: 30px;
+}

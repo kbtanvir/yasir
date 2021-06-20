@@ -1,0 +1,72 @@
+@mixin flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    h3, {
+        margin: 10px 0 20px 0;
+    }
+    p {
+        margin: 0 0 20px 0;
+    }
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.row {
+    @include flex-row;
+    gap: 30px;
+    .col {
+        @include flex-col;
+    }
+}
+header {
+    background: rgb(202, 107, 107);
+    padding: 20px 0;
+    .logo {
+        font-size: 30px;
+    }
+    nav {
+        @include flex-row;
+        width: 200px;
+        li { 
+            list-style: none;
+        }
+    }
+}
+.content {
+    padding: 80px 0px 80px;
+    .container {
+        @include flex-col;
+        gap: 40px;
+    }
+    .col {
+        border: 1px solid;
+        padding: 30px;
+        button {
+            width: 200px;
+            background-color:burlywood;
+            padding: 10px;
+            text-transform: uppercase;
+            border: none;
+            color: black;
+        }
+    }
+}
+footer {
+    background-color: beige;
+    padding: 50px 0;
+}
